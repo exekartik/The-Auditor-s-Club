@@ -1,496 +1,613 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Auditors Club</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/style.css" />
-  </head>
-  <body>
-    <!-- Decorative background blobs -->
-    <div class="blob-bg top-left"></div>
-    <div class="blob-bg bottom-right"></div>
-    
-    <nav class="navbar container">
-      <div class="logo">
-        <img src="/src/assets/logo.png" alt="TAC Logo" class="nav-logo-img" onerror="this.style.display='none'" />
-        <strong>The Auditor's Club</strong>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/src/assets/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Auditors Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <!-- Decorative background blobs -->
+  <div class="blob-bg top-left"></div>
+  <div class="blob-bg bottom-right"></div>
+
+  <nav class="navbar container">
+    <div class="logo">
+      <img src="/src/assets/logo.png" alt="TAC Logo" class="nav-logo-img" onerror="this.style.display='none'" />
+      <strong>The Auditor's Club</strong>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#connect">Let's Connect</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="grid-icon">
+        <rect x="3" y="3" width="7" height="7"></rect>
+        <rect x="14" y="3" width="7" height="7"></rect>
+        <rect x="14" y="14" width="7" height="7"></rect>
+        <rect x="3" y="14" width="7" height="7"></rect>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- SECTION: HOME -->
+  <section id="home" class="hero container section-padding">
+    <div class="hero-image-wrapper">
+      <img id="hero-illustration" src="/src/assets/hero-illustration.png" alt="Business Growth Illustration"
+        class="hero-image" />
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Your Startup's Financial Partner from Day One to Series A</h1>
+        <p class="hero-subtitle">We transform startup visions into investor-ready businesses through expert fundraising,
+          financial modeling, and compliance support.</p>
       </div>
-      <ul class="nav-links">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#connect">Let's Connect</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="grid-icon"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-      </button>
-    </nav>
 
-    <!-- SECTION: HOME -->
-    <section id="home" class="hero container section-padding">
-      <div class="hero-image-wrapper">
-        <img id="hero-illustration" src="/src/assets/hero-illustration.png" alt="Business Growth Illustration" class="hero-image" />
-      </div>
-
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>Your Startup's Financial Partner from Day One to Series A</h1>
-          <p class="hero-subtitle">We transform startup visions into investor-ready businesses through expert fundraising, financial modeling, and compliance support.</p>
+      <div class="stats-row">
+        <div class="stat-item">
+          <h3>₹20 Cr+</h3>
+          <p>Funds Raised</p>
         </div>
-
-        <div class="stats-row">
-          <div class="stat-item">
-            <h3>₹20 Cr+</h3>
-            <p>Funds Raised</p>
-          </div>
-          <div class="stat-item">
-            <h3>50+</h3>
-            <p>Startups</p>
-          </div>
-          <div class="stat-item">
-            <h3>3 Mos</h3>
-            <p>Avg time to Funding</p>
-          </div>
+        <div class="stat-item">
+          <h3>50+</h3>
+          <p>Startups</p>
         </div>
-      </div>
-    </section>
-
-    <!-- SECTION: WHAT WE DO (Services) -->
-    <section id="services" class="what-we-do bg-light">
-      <div class="container section-padding">
-        <div class="section-header text-center">
-          <h2 class="section-title">What We Do</h2>
-          <p class="subtitle">We don't just deliver services—we deliver outcomes that get you funded</p>
-        </div>
-        
-        <div class="services-grid-new">
-          <!-- Service 1 -->
-          <div class="svc-card">
-            <div class="svc-top">
-              <div class="svc-icon-box fill-blue">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="svc-icon"><path d="M3 17L9 11L13 15L21 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 7H21V14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </div>
-              <span class="pill-badge popular">Popular</span>
-            </div>
-            <h3 class="svc-title">Fundraising & Pitch Decks</h3>
-            <p class="svc-blue-text">Turn your vision into investor-ready narratives</p>
-            <p class="svc-desc">Craft compelling pitch decks that tell your story and secure capital. From seed to Series A, we position you for success.</p>
-            <div class="outcome-box">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="outcome-icon"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-              <div>
-                <strong>Outcome:</strong>
-                <p>Average 3-month fundraising cycle. 85% success rate in securing target capital.</p>
-              </div>
-            </div>
-            <a href="#" class="learn-more">Learn more &rarr;</a>
-          </div>
-
-          <!-- Service 2 -->
-          <div class="svc-card">
-            <div class="svc-top">
-              <div class="svc-icon-box fill-blue">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" class="svc-icon"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="16" y1="18" x2="16" y2="18.01"/><line x1="12" y1="18" x2="12" y2="18.01"/><line x1="8" y1="18" x2="8" y2="18.01"/></svg>
-              </div>
-              <span class="pill-badge popular">Popular</span>
-            </div>
-            <h3 class="svc-title">Financial Modelling</h3>
-            <p class="svc-blue-text">Build projections investors trust</p>
-            <p class="svc-desc">Create robust 3-5 year financial models that demonstrate your path to profitability and scale.</p>
-            <div class="outcome-box">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="outcome-icon"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-              <div>
-                <strong>Outcome:</strong>
-                <p>Models trusted by top-tier VCs. Clear path to unit economics and profitability.</p>
-              </div>
-            </div>
-            <a href="#" class="learn-more">Learn more &rarr;</a>
-          </div>
-
-          <!-- Service 3 -->
-          <div class="svc-card">
-            <div class="svc-top">
-              <div class="svc-icon-box fill-blue">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" class="svc-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15L11 17L15 13"/></svg>
-              </div>
-              <span class="pill-badge popular">Popular</span>
-            </div>
-            <h3 class="svc-title">Compliance & Incorporation</h3>
-            <p class="svc-blue-text">Stay compliant, stay focused</p>
-            <p class="svc-desc">Navigate regulatory requirements effortlessly. We handle the legal maze while you build your product.</p>
-            <div class="outcome-box">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="outcome-icon"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-              <div>
-                <strong>Outcome:</strong>
-                <p>100% compliance track record. Zero missed deadlines or penalties.</p>
-              </div>
-            </div>
-            <a href="#" class="learn-more">Learn more &rarr;</a>
-          </div>
-
-          <!-- Service 4 -->
-          <div class="svc-card">
-            <div class="svc-top">
-              <div class="svc-icon-box fill-blue">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" class="svc-icon"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15 11.2V11a3 3 0 1 0-6 0v.2a4 4 0 0 1-1.6 3h9.2a4 4 0 0 1-1.6-3z"/><line x1="12" y1="2" x2="12" y2="4"/></svg>
-              </div>
-              <span class="pill-badge popular">Popular</span>
-            </div>
-            <h3 class="svc-title">Strategic Advisory</h3>
-            <p class="svc-blue-text">Expert guidance at every milestone</p>
-            <p class="svc-desc">Partner with seasoned advisors who've been through the startup journey. Get insights that matter when they matter.</p>
-            <div class="outcome-box">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="outcome-icon"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-              <div>
-                <strong>Outcome:</strong>
-                <p>Strategic clarity on growth, funding, and scale decisions.</p>
-              </div>
-            </div>
-            <a href="#" class="learn-more">Learn more &rarr;</a>
-          </div>
-          
-        </div>
-        <div class="text-center mt-40">
-          <button class="btn-outline">View All Services &rarr;</button>
+        <div class="stat-item">
+          <h3>3 Mos</h3>
+          <p>Avg time to Funding</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SECTION: WHY FOUNDERS CHOOSE US -->
-    <section id="about" class="why-choose-us bg-offwhite">
-      <div class="container section-padding">
-        <div class="section-header text-center">
-          <h2 class="section-title">Why Founders Choose Us</h2>
-          <p class="subtitle">We're not just another consulting firm. We're your unfair advantage.</p>
-        </div>
-        <div class="why-grid">
-
-          <div class="why-card">
-            <div class="why-top">
-              <span class="why-num-badge">1</span>
-              <div class="why-stat text-right">
-                <span class="stat-big">100%</span><br>
-                <span class="stat-small">Startup Focus</span>
-              </div>
-            </div>
-            <h3 class="why-title">Startup-Specialized Expertise</h3>
-            <p class="why-desc">We don't do corporate. We don't do established businesses. We only work with startups—it's all we do, and we're exceptional at it.</p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-top">
-              <span class="why-num-badge">2</span>
-              <div class="why-stat text-right">
-                <span class="stat-big">1/10th</span><br>
-                <span class="stat-small">of Big 4 Cost</span>
-              </div>
-            </div>
-            <h3 class="why-title">Institutional-Grade, Startup-Priced</h3>
-            <p class="why-desc">Big 4 expertise without the Big 4 price tag. World-class financial advisory that early-stage founders can actually afford.</p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-top">
-              <span class="why-num-badge">3</span>
-              <div class="why-stat text-right">
-                <span class="stat-big">₹20Cr+</span><br>
-                <span class="stat-small">Funds Raised</span>
-              </div>
-            </div>
-            <h3 class="why-title">Proven Fundraising Success</h3>
-            <p class="why-desc">Our founders have raised ₹20 Cr+ from top VCs. We know what investors want because we've successfully delivered it 50+ times.</p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-top">
-              <span class="why-num-badge">4</span>
-              <div class="why-stat text-right">
-                <span class="stat-big">2.5 years</span><br>
-                <span class="stat-small">Avg. Partnership</span>
-              </div>
-            </div>
-            <h3 class="why-title">True Partnership Approach</h3>
-            <p class="why-desc">We're not transactional. We're invested in your success. Many of our clients have been with us from incorporation to Series A and beyond.</p>
-          </div>
-
-        </div>
+  <!-- SECTION: WHAT WE DO (Services) -->
+  <section id="services" class="what-we-do bg-light">
+    <div class="container section-padding">
+      <div class="section-header text-center">
+        <h2 class="section-title">What We Do</h2>
+        <p class="subtitle">We don't just deliver services—we deliver outcomes that get you funded</p>
       </div>
-    </section>
 
-    <!-- SECTION: ABOUT US & FOUNDERS -->
-    <section id="about" class="team-section bg-light">
-      <div class="container section-padding">
-        <div class="section-header text-center" style="margin-bottom: 60px;">
-          <h2 class="section-title">About Us</h2>
-          <p class="subtitle" style="font-size: 1.25rem; color: var(--dark-purple); font-weight: 600;">We bridge the gap between startup potential and investor capital.</p>
-          <p style="max-width: 800px; margin: 16px auto 0; color: #555; line-height: 1.6; font-size: 1.05rem;">Founded by financial experts who saw founders struggling with the complexities of fundraising and compliance. We provide "institutional-grade" advisory at startup-friendly pricing.</p>
-        </div>
-
-        <div class="team-grid">
-          <!-- Founder 1 -->
-          <div class="team-card">
-            <div class="team-img-wrapper">
-              <!-- Placeholder image, user will provide real src -->
-              <img src="/src/assets/arjun.png" alt="Arjun Singh" class="team-img" onerror="this.src='https://via.placeholder.com/600x400/2f2e41/ffffff?text=Arjun+Singh'">
-              <div class="team-info-overlay">
-                <h3>Arjun Singh</h3>
-                <p>FOUNDER & CEO</p>
-              </div>
+      <div class="services-grid-new">
+        <!-- Service 1 -->
+        <div class="svc-card">
+          <div class="svc-top">
+            <div class="svc-icon-box fill-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="svc-icon">
+                <path d="M3 17L9 11L13 15L21 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M14 7H21V14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </div>
-            <div class="team-content">
-              <p class="team-highlight">Transforms startup finances into investor-ready stories that secure capital.</p>
-              
-              <div class="expertise-area">
-                <strong>Core Expertise:</strong>
-                <div class="expertise-pills">
-                  <span>FP&A</span>
-                  <span>Fundraising Strategy</span>
-                  <span>Growth Advisory</span>
-                </div>
-              </div>
-
-              <div class="track-record-box">
-                <svg width="18" height="18" fill="var(--dark-purple)" viewBox="0 0 16 16" style="flex-shrink: 0;"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><line x1="11" y1="5" x2="6" y2="10" stroke="var(--dark-purple)" stroke-width="1.5"/><line x1="11" y1="5" x2="8" y2="5" stroke="var(--dark-purple)" stroke-width="1.5"/><line x1="11" y1="5" x2="11" y2="8" stroke="var(--dark-purple)" stroke-width="1.5"/></svg>
-                <span><strong>Track Record:</strong> Guided 30+ startups from idea to funded, with ₹15 Cr+ capital raised</span>
-              </div>
-              
-              <div class="team-socials">
-                <a href="#" aria-label="LinkedIn">In</a>
-                <a href="#" aria-label="X">X</a>
-                <a href="#" aria-label="Mail">✉</a>
-              </div>
+            <span class="pill-badge popular">Popular</span>
+          </div>
+          <h3 class="svc-title">Fundraising & Pitch Decks</h3>
+          <p class="svc-blue-text">Turn your vision into investor-ready narratives</p>
+          <p class="svc-desc">Craft compelling pitch decks that tell your story and secure capital. From seed to Series
+            A, we position you for success.</p>
+          <div class="outcome-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              class="outcome-icon">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+            <div>
+              <strong>Outcome:</strong>
+              <p>Average 3-month fundraising cycle. 85% success rate in securing target capital.</p>
             </div>
           </div>
+          <a href="#" class="learn-more">Learn more &rarr;</a>
+        </div>
 
-          <!-- Founder 2 -->
-          <div class="team-card">
-            <div class="team-img-wrapper">
-              <img src="/src/assets/kaushal.png" alt="Kaushal Singh" class="team-img" onerror="this.src='https://via.placeholder.com/600x400/2f2e41/ffffff?text=Kaushal+Singh'">
-              <div class="team-info-overlay">
-                <h3>Kaushal Singh</h3>
-                <p>CO-FOUNDER & LEGAL HEAD</p>
-              </div>
+        <!-- Service 2 -->
+        <div class="svc-card">
+          <div class="svc-top">
+            <div class="svc-icon-box fill-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                class="svc-icon">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
+                <line x1="8" y1="6" x2="16" y2="6" />
+                <line x1="16" y1="14" x2="16" y2="14.01" />
+                <line x1="12" y1="14" x2="12" y2="14.01" />
+                <line x1="8" y1="14" x2="8" y2="14.01" />
+                <line x1="16" y1="18" x2="16" y2="18.01" />
+                <line x1="12" y1="18" x2="12" y2="18.01" />
+                <line x1="8" y1="18" x2="8" y2="18.01" />
+              </svg>
             </div>
-            <div class="team-content">
-              <p class="team-highlight">Ensures your startup stays compliant, investor-ready, and legally bulletproof.</p>
-              
-              <div class="expertise-area">
-                <strong>Core Expertise:</strong>
-                <div class="expertise-pills">
-                  <span>Due Diligence</span>
-                  <span>Compliance</span>
-                  <span>Taxation</span>
-                  <span>Pitch Decks</span>
-                </div>
-              </div>
-
-              <div class="track-record-box">
-                <svg width="18" height="18" fill="var(--dark-purple)" viewBox="0 0 16 16" style="flex-shrink: 0;"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><line x1="11" y1="5" x2="6" y2="10" stroke="var(--dark-purple)" stroke-width="1.5"/><line x1="11" y1="5" x2="8" y2="5" stroke="var(--dark-purple)" stroke-width="1.5"/><line x1="11" y1="5" x2="11" y2="8" stroke="var(--dark-purple)" stroke-width="1.5"/></svg>
-                <span><strong>Track Record:</strong> Zero compliance penalties across 50+ startups, 100% due diligence success rate</span>
-              </div>
-              
-              <div class="team-socials">
-                <a href="#" aria-label="LinkedIn">In</a>
-                <a href="#" aria-label="X">X</a>
-                <a href="#" aria-label="Mail">✉</a>
-              </div>
+            <span class="pill-badge popular">Popular</span>
+          </div>
+          <h3 class="svc-title">Financial Modelling</h3>
+          <p class="svc-blue-text">Build projections investors trust</p>
+          <p class="svc-desc">Create robust 3-5 year financial models that demonstrate your path to profitability and
+            scale.</p>
+          <div class="outcome-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              class="outcome-icon">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+            <div>
+              <strong>Outcome:</strong>
+              <p>Models trusted by top-tier VCs. Clear path to unit economics and profitability.</p>
             </div>
           </div>
+          <a href="#" class="learn-more">Learn more &rarr;</a>
         </div>
+
+        <!-- Service 3 -->
+        <div class="svc-card">
+          <div class="svc-top">
+            <div class="svc-icon-box fill-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                class="svc-icon">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <path d="M9 15L11 17L15 13" />
+              </svg>
+            </div>
+            <span class="pill-badge popular">Popular</span>
+          </div>
+          <h3 class="svc-title">Compliance & Incorporation</h3>
+          <p class="svc-blue-text">Stay compliant, stay focused</p>
+          <p class="svc-desc">Navigate regulatory requirements effortlessly. We handle the legal maze while you build
+            your product.</p>
+          <div class="outcome-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              class="outcome-icon">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+            <div>
+              <strong>Outcome:</strong>
+              <p>100% compliance track record. Zero missed deadlines or penalties.</p>
+            </div>
+          </div>
+          <a href="#" class="learn-more">Learn more &rarr;</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="svc-card">
+          <div class="svc-top">
+            <div class="svc-icon-box fill-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                class="svc-icon">
+                <line x1="9" y1="18" x2="15" y2="18" />
+                <line x1="10" y1="22" x2="14" y2="22" />
+                <path d="M15 11.2V11a3 3 0 1 0-6 0v.2a4 4 0 0 1-1.6 3h9.2a4 4 0 0 1-1.6-3z" />
+                <line x1="12" y1="2" x2="12" y2="4" />
+              </svg>
+            </div>
+            <span class="pill-badge popular">Popular</span>
+          </div>
+          <h3 class="svc-title">Strategic Advisory</h3>
+          <p class="svc-blue-text">Expert guidance at every milestone</p>
+          <p class="svc-desc">Partner with seasoned advisors who've been through the startup journey. Get insights that
+            matter when they matter.</p>
+          <div class="outcome-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              class="outcome-icon">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+            <div>
+              <strong>Outcome:</strong>
+              <p>Strategic clarity on growth, funding, and scale decisions.</p>
+            </div>
+          </div>
+          <a href="#" class="learn-more">Learn more &rarr;</a>
+        </div>
+
       </div>
-    </section>
-
-    <!-- SECTION: HOW WE WORK -->
-    <section class="how-we-work bg-light">
-      <div class="container section-padding">
-        <div class="section-header text-center">
-          <h2 class="section-title">How We Work</h2>
-          <p class="subtitle">A proven process refined with 50+ startups</p>
-        </div>
-        
-        <div class="process-stepper">
-          <div class="step-card">
-            <div class="step-badges">
-              <span class="st-num">01</span>
-              <span class="st-week">Week 1</span>
-            </div>
-            <h3 class="st-title">Discovery & Alignment</h3>
-            <p class="st-desc">We start with a deep-dive session to understand your vision, challenges, current stage, and fundraising goals.</p>
-          </div>
-          
-          <div class="step-card">
-            <div class="step-badges">
-              <span class="st-num">02</span>
-              <span class="st-week">Week 1-2</span>
-            </div>
-            <h3 class="st-title">Strategy & Roadmap</h3>
-            <p class="st-desc">We create a customized action plan—whether it's fundraising strategy, financial modeling, or compliance setup.</p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-badges">
-              <span class="st-num">03</span>
-              <span class="st-week">Week 2-8</span>
-            </div>
-            <h3 class="st-title">Execution & Delivery</h3>
-            <p class="st-desc">Our team gets to work—crafting your pitch deck, building financial models, or setting up compliance frameworks.</p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-badges">
-              <span class="st-num">04</span>
-              <span class="st-week">Ongoing</span>
-            </div>
-            <h3 class="st-title">Ongoing Partnership</h3>
-            <p class="st-desc">We don't disappear after delivery. We're your ongoing partner—refining strategy, preparing for next rounds, staying compliant.</p>
-          </div>
-        </div>
+      <div class="text-center mt-40">
+        <button class="btn-outline">View All Services &rarr;</button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SECTION: TESTIMONIALS (WALL OF LOVE) -->
-    <section class="testimonials bg-offwhite">
-      <div class="container section-padding">
-        <div class="section-header text-center">
-          <h2 class="section-title">What Founders Say</h2>
-          <p class="subtitle">Join the founders who trust us to secure their capital.</p>
+  <!-- SECTION: WHY FOUNDERS CHOOSE US -->
+  <section id="about" class="why-choose-us bg-offwhite">
+    <div class="container section-padding">
+      <div class="section-header text-center">
+        <h2 class="section-title">Why Founders Choose Us</h2>
+        <p class="subtitle">We're not just another consulting firm. We're your unfair advantage.</p>
+      </div>
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="why-top">
+            <span class="why-num-badge">1</span>
+            <div class="why-stat text-right">
+              <span class="stat-big">100%</span><br>
+              <span class="stat-small">Startup Focus</span>
+            </div>
+          </div>
+          <h3 class="why-title">Startup-Specialized Expertise</h3>
+          <p class="why-desc">We don't do corporate. We don't do established businesses. We only work with startups—it's
+            all we do, and we're exceptional at it.</p>
         </div>
 
-        <div class="tweet-grid">
-          <!-- Tweet 1 -->
-          <div class="tweet-card">
-            <div class="tweet-header">
-              <div class="tw-avatar">JS</div>
-              <div class="tw-info">
-                <strong>John Smith</strong>
-                <span class="tw-handle">@johnsmith_founder</span>
-              </div>
-              <div class="tw-icon">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" color="#1DA1F2"><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"/></svg>
-              </div>
+        <div class="why-card">
+          <div class="why-top">
+            <span class="why-num-badge">2</span>
+            <div class="why-stat text-right">
+              <span class="stat-big">1/10th</span><br>
+              <span class="stat-small">of Big 4 Cost</span>
             </div>
-            <p class="tw-content">The Auditors Club transformed our pitch deck. We went from struggling to secure meetings to raising our Seed round in just 3 months. Absolute game changers for our startup! 🚀</p>
           </div>
+          <h3 class="why-title">Institutional-Grade, Startup-Priced</h3>
+          <p class="why-desc">Big 4 expertise without the Big 4 price tag. World-class financial advisory that
+            early-stage founders can actually afford.</p>
+        </div>
 
-          <!-- Tweet 2 -->
-          <div class="tweet-card">
-            <div class="tweet-header">
-              <div class="tw-avatar bg-pink">AK</div>
-              <div class="tw-info">
-                <strong>Anna K.</strong>
-                <span class="tw-handle">@annabuilds_</span>
-              </div>
-              <div class="tw-icon">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" color="#1DA1F2"><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"/></svg>
-              </div>
+        <div class="why-card">
+          <div class="why-top">
+            <span class="why-num-badge">3</span>
+            <div class="why-stat text-right">
+              <span class="stat-big">₹20Cr+</span><br>
+              <span class="stat-small">Funds Raised</span>
             </div>
-            <p class="tw-content">Their financial models are so robust that our lead VC completely bypassed their standard due diligence on our projections. Worth every penny and effectively 1/10th the cost of tier-1 firms.</p>
           </div>
+          <h3 class="why-title">Proven Fundraising Success</h3>
+          <p class="why-desc">Our founders have raised ₹20 Cr+ from top VCs. We know what investors want because we've
+            successfully delivered it 50+ times.</p>
+        </div>
 
-          <!-- Tweet 3 -->
-          <div class="tweet-card">
-            <div class="tweet-header">
-              <div class="tw-avatar bg-yellow">RV</div>
-              <div class="tw-info">
-                <strong>Rahul V.</strong>
-                <span class="tw-handle">@rahul_founder</span>
-              </div>
-              <div class="tw-icon">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" color="#1DA1F2"><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"/></svg>
+        <div class="why-card">
+          <div class="why-top">
+            <span class="why-num-badge">4</span>
+            <div class="why-stat text-right">
+              <span class="stat-big">2.5 years</span><br>
+              <span class="stat-small">Avg. Partnership</span>
+            </div>
+          </div>
+          <h3 class="why-title">True Partnership Approach</h3>
+          <p class="why-desc">We're not transactional. We're invested in your success. Many of our clients have been
+            with us from incorporation to Series A and beyond.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: ABOUT US & FOUNDERS -->
+  <section id="about" class="team-section bg-light">
+    <div class="container section-padding">
+      <div class="section-header text-center" style="margin-bottom: 60px;">
+        <h2 class="section-title">About Us</h2>
+        <p class="subtitle" style="font-size: 1.25rem; color: var(--dark-purple); font-weight: 600;">We bridge the gap
+          between startup potential and investor capital.</p>
+        <p style="max-width: 800px; margin: 16px auto 0; color: #555; line-height: 1.6; font-size: 1.05rem;">Founded by
+          financial experts who saw founders struggling with the complexities of fundraising and compliance. We provide
+          "institutional-grade" advisory at startup-friendly pricing.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Founder 1 -->
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <!-- Placeholder image, user will provide real src -->
+            <img src="/src/assets/arjun.png" alt="Arjun Singh" class="team-img"
+              onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/2f2e41/ffffff?text=Arjun+Singh'">
+            <div class="team-info-overlay">
+              <h3>Arjun Singh</h3>
+              <p>FOUNDER & CEO</p>
+            </div>
+          </div>
+          <div class="team-content">
+            <p class="team-highlight">Transforms startup finances into investor-ready stories that secure capital.</p>
+
+            <div class="expertise-area">
+              <strong>Core Expertise:</strong>
+              <div class="expertise-pills">
+                <span>FP&A</span>
+                <span>Fundraising Strategy</span>
+                <span>Growth Advisory</span>
               </div>
             </div>
-            <p class="tw-content">Focusing on product is easy when TAC handles all our MCA compliance and paperwork. They are truly an execution-oriented team. Can't recommend them enough! #startup #compliance</p>
+
+            <div class="track-record-box">
+              <svg width="18" height="18" fill="var(--dark-purple)" viewBox="0 0 16 16" style="flex-shrink: 0;">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <line x1="11" y1="5" x2="6" y2="10" stroke="var(--dark-purple)" stroke-width="1.5" />
+                <line x1="11" y1="5" x2="8" y2="5" stroke="var(--dark-purple)" stroke-width="1.5" />
+                <line x1="11" y1="5" x2="11" y2="8" stroke="var(--dark-purple)" stroke-width="1.5" />
+              </svg>
+              <span><strong>Track Record:</strong> Guided 30+ startups from idea to funded, with ₹15 Cr+ capital
+                raised</span>
+            </div>
+
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn">In</a>
+              <a href="#" aria-label="X">X</a>
+              <a href="#" aria-label="Mail">✉</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder 2 -->
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img src="/src/assets/kaushal.png" alt="Kaushal Singh" class="team-img"
+              onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/2f2e41/ffffff?text=Kaushal+Singh'">
+            <div class="team-info-overlay">
+              <h3>Kaushal Singh</h3>
+              <p>CO-FOUNDER & LEGAL HEAD</p>
+            </div>
+          </div>
+          <div class="team-content">
+            <p class="team-highlight">Ensures your startup stays compliant, investor-ready, and legally bulletproof.</p>
+
+            <div class="expertise-area">
+              <strong>Core Expertise:</strong>
+              <div class="expertise-pills">
+                <span>Due Diligence</span>
+                <span>Compliance</span>
+                <span>Taxation</span>
+                <span>Pitch Decks</span>
+              </div>
+            </div>
+
+            <div class="track-record-box">
+              <svg width="18" height="18" fill="var(--dark-purple)" viewBox="0 0 16 16" style="flex-shrink: 0;">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <line x1="11" y1="5" x2="6" y2="10" stroke="var(--dark-purple)" stroke-width="1.5" />
+                <line x1="11" y1="5" x2="8" y2="5" stroke="var(--dark-purple)" stroke-width="1.5" />
+                <line x1="11" y1="5" x2="11" y2="8" stroke="var(--dark-purple)" stroke-width="1.5" />
+              </svg>
+              <span><strong>Track Record:</strong> Zero compliance penalties across 50+ startups, 100% due diligence
+                success rate</span>
+            </div>
+
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn">In</a>
+              <a href="#" aria-label="X">X</a>
+              <a href="#" aria-label="Mail">✉</a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SECTION: LET'S CONNECT & FOOTER -->
-    <section id="connect" class="connect-footer-section">
-      <!-- Connect Banner -->
-      <div class="connect-banner">
-        <div class="container section-padding text-center">
-          <h2 class="section-title text-white">Ready to Make Your Startup Investor-Ready?</h2>
-          <p class="text-white lead" style="margin-bottom: 40px; opacity: 0.9;">Book a free 30-minute consultation. No pitch. No pressure. Just honest advice on your fundraising journey.</p>
-          
-          <div class="connect-actions">
-            <!-- Email Form replacing original simple button -->
-            <form id="subscribe-form" class="subscribe-form dark-form" action="#" method="POST">
-              <input type="email" name="email" id="email" placeholder="Your email address" required />
-              <button type="submit" class="btn-primary">Let's Connect &rarr;</button>
-            </form>
-            <div id="form-message" class="hidden text-white" style="margin-top: 10px;"></div>
-            
-            <p class="response-guarantee mt-20 text-white">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 4px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Response within 24 hours guaranteed
-            </p>
+  <!-- SECTION: HOW WE WORK -->
+  <section class="how-we-work bg-light">
+    <div class="container section-padding">
+      <div class="section-header text-center">
+        <h2 class="section-title">How We Work</h2>
+        <p class="subtitle">A proven process refined with 50+ startups</p>
+      </div>
+
+      <div class="process-stepper">
+        <div class="step-card">
+          <div class="step-badges">
+            <span class="st-num">01</span>
+            <span class="st-week">Week 1</span>
+          </div>
+          <h3 class="st-title">Discovery & Alignment</h3>
+          <p class="st-desc">We start with a deep-dive session to understand your vision, challenges, current stage, and
+            fundraising goals.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-badges">
+            <span class="st-num">02</span>
+            <span class="st-week">Week 1-2</span>
+          </div>
+          <h3 class="st-title">Strategy & Roadmap</h3>
+          <p class="st-desc">We create a customized action plan—whether it's fundraising strategy, financial modeling,
+            or compliance setup.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-badges">
+            <span class="st-num">03</span>
+            <span class="st-week">Week 2-8</span>
+          </div>
+          <h3 class="st-title">Execution & Delivery</h3>
+          <p class="st-desc">Our team gets to work—crafting your pitch deck, building financial models, or setting up
+            compliance frameworks.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-badges">
+            <span class="st-num">04</span>
+            <span class="st-week">Ongoing</span>
+          </div>
+          <h3 class="st-title">Ongoing Partnership</h3>
+          <p class="st-desc">We don't disappear after delivery. We're your ongoing partner—refining strategy, preparing
+            for next rounds, staying compliant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: TESTIMONIALS (WALL OF LOVE) -->
+  <section class="testimonials bg-offwhite">
+    <div class="container section-padding">
+      <div class="section-header text-center">
+        <h2 class="section-title">What Founders Say</h2>
+        <p class="subtitle">Join the founders who trust us to secure their capital.</p>
+      </div>
+
+      <div class="tweet-grid">
+        <!-- Tweet 1 -->
+        <div class="tweet-card">
+          <div class="tweet-header">
+            <div class="tw-avatar">JS</div>
+            <div class="tw-info">
+              <strong>John Smith</strong>
+              <span class="tw-handle">@johnsmith_founder</span>
+            </div>
+            <div class="tw-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" color="#1DA1F2">
+                <path
+                  d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+              </svg>
+            </div>
+          </div>
+          <p class="tw-content">The Auditors Club transformed our pitch deck. We went from struggling to secure meetings
+            to raising our Seed round in just 3 months. Absolute game changers for our startup! 🚀</p>
+        </div>
+
+        <!-- Tweet 2 -->
+        <div class="tweet-card">
+          <div class="tweet-header">
+            <div class="tw-avatar bg-pink">AK</div>
+            <div class="tw-info">
+              <strong>Anna K.</strong>
+              <span class="tw-handle">@annabuilds_</span>
+            </div>
+            <div class="tw-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" color="#1DA1F2">
+                <path
+                  d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+              </svg>
+            </div>
+          </div>
+          <p class="tw-content">Their financial models are so robust that our lead VC completely bypassed their standard
+            due diligence on our projections. Worth every penny and effectively 1/10th the cost of tier-1 firms.</p>
+        </div>
+
+        <!-- Tweet 3 -->
+        <div class="tweet-card">
+          <div class="tweet-header">
+            <div class="tw-avatar bg-yellow">RV</div>
+            <div class="tw-info">
+              <strong>Rahul V.</strong>
+              <span class="tw-handle">@rahul_founder</span>
+            </div>
+            <div class="tw-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" color="#1DA1F2">
+                <path
+                  d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+              </svg>
+            </div>
+          </div>
+          <p class="tw-content">Focusing on product is easy when TAC handles all our MCA compliance and paperwork. They
+            are truly an execution-oriented team. Can't recommend them enough! #startup #compliance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: LET'S CONNECT & FOOTER -->
+  <section id="connect" class="connect-footer-section">
+    <!-- Connect Banner -->
+    <div class="connect-banner">
+      <div class="container section-padding text-center">
+        <h2 class="section-title text-white">Ready to Make Your Startup Investor-Ready?</h2>
+        <p class="text-white lead" style="margin-bottom: 40px; opacity: 0.9;">Book a free 30-minute consultation. No
+          pitch. No pressure. Just honest advice on your fundraising journey.</p>
+
+        <div class="connect-actions">
+          <!-- Email Form replacing original simple button -->
+          <form id="subscribe-form" class="subscribe-form dark-form" action="#" method="POST">
+            <input type="email" name="email" id="email" placeholder="Your email address" required />
+            <button type="submit" class="btn-primary">Let's Connect &rarr;</button>
+          </form>
+          <div id="form-message" class="hidden text-white" style="margin-top: 10px;"></div>
+
+          <p class="response-guarantee mt-20 text-white">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              style="vertical-align: middle; margin-right: 4px;">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg> Response within 24 hours guaranteed
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dark 4-Col Footer -->
+    <footer class="dark-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1 -->
+          <div class="footer-col">
+            <h3 class="footer-logo">
+              <strong style="font-family: cursive; font-size: 2rem;">TAC</strong>
+            </h3>
+            <p class="text-gray mb-16">Your Startup's Financial Partner from Day One to Series A</p>
+            <p class="text-gray">Empowering startups from idea to investment.</p>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#home">Insights</a></li>
+              <li><a href="#connect">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3 -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Our Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Fundraising & Pitch Decks</a></li>
+              <li><a href="#services">Financial Modelling</a></li>
+              <li><a href="#services">Compliance & Incorporation</a></li>
+              <li><a href="#services">Strategic Advisory</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4 -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Contact Us</h4>
+            <ul class="footer-contact">
+              <li style="display: flex; align-items: flex-start; gap: 8px;">
+                <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg></span>
+                <span>info@theauditorsclub.com</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 8px;">
+                <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg></span>
+                <span>9990188784<br>7042525568</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 8px;">
+                <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg></span>
+                <span>Gurgaon, India</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </footer>
+  </section>
 
-      <!-- Dark 4-Col Footer -->
-      <footer class="dark-footer">
-        <div class="container">
-          <div class="footer-grid">
-            <!-- Col 1 -->
-            <div class="footer-col">
-              <h3 class="footer-logo">
-                 <strong style="font-family: cursive; font-size: 2rem;">TAC</strong>
-              </h3>
-              <p class="text-gray mb-16">Your Startup's Financial Partner from Day One to Series A</p>
-              <p class="text-gray">Empowering startups from idea to investment.</p>
-            </div>
-            
-            <!-- Col 2 -->
-            <div class="footer-col">
-              <h4 class="footer-heading">Quick Links</h4>
-              <ul class="footer-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#home">Insights</a></li>
-                <li><a href="#connect">Contact</a></li>
-              </ul>
-            </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
 
-            <!-- Col 3 -->
-            <div class="footer-col">
-              <h4 class="footer-heading">Our Services</h4>
-              <ul class="footer-links">
-                <li><a href="#services">Fundraising & Pitch Decks</a></li>
-                <li><a href="#services">Financial Modelling</a></li>
-                <li><a href="#services">Compliance & Incorporation</a></li>
-                <li><a href="#services">Strategic Advisory</a></li>
-              </ul>
-            </div>
-
-            <!-- Col 4 -->
-            <div class="footer-col">
-              <h4 class="footer-heading">Contact Us</h4>
-              <ul class="footer-contact">
-                <li style="display: flex; align-items: flex-start; gap: 8px;">
-                  <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span> 
-                  <span>info@theauditorsclub.com</span>
-                </li>
-                <li style="display: flex; align-items: flex-start; gap: 8px;">
-                  <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span> 
-                  <span>9990188784<br>7042525568</span>
-                </li>
-                <li style="display: flex; align-items: flex-start; gap: 8px;">
-                  <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span> 
-                  <span>Gurgaon, India</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </section>
-
-    <script type="module" src="/src/main.js"></script>
-  </body>
 </html>
