@@ -5,13 +5,44 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/src/assets/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Auditors Club</title>
+  <title>Start and Operate Your Business in India | The Auditors Club</title>
+  <meta name="description" content="TAC is the premium India entry & financial operations partner for global companies, SaaS brands, e-commerce, and international investors. Launch, comply, and scale seamlessly." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css" />
+  
+  <!-- Organization Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "The Auditors Club (TAC)",
+    "url": "https://the-auditors-club.vercel.app",
+    "logo": "https://the-auditors-club.vercel.app/src/assets/logo.png",
+    "description": "India Entry & Financial Operations Partner for global businesses, overseas founders, SaaS companies, and e-commerce brands.",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+919990188784",
+        "contactType": "sales",
+        "areaServed": "Global",
+        "availableLanguage": "en"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+917042525568",
+        "contactType": "support",
+        "areaServed": "Global",
+        "availableLanguage": "en"
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/arjunvssingh/",
+      "https://www.linkedin.com/in/cakaushalsingh/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -19,105 +50,196 @@
   <div class="blob-bg top-left"></div>
   <div class="blob-bg bottom-right"></div>
 
-  <nav class="navbar container">
-    <div class="logo">
-      <img src="/src/assets/logo.png" alt="TAC Logo" class="nav-logo-img" onerror="this.style.display='none'" />
-      <strong>The Auditors Club</strong>
+  <!-- STICKY NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <div class="logo">
+        <img src="/src/assets/logo.png" alt="The Auditors Club (TAC) Logo" class="nav-logo-img" onerror="this.style.display='none'" />
+        <strong>The Auditors Club</strong>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#why-india">Why India</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#who-we-help">Who We Help</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li class="mobile-only"><a href="mailto:info@theauditorsclub.com" class="btn-primary mobile-menu-cta">Book Consultation</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="mailto:info@theauditorsclub.com" class="btn-primary nav-cta">Book Consultation</a>
+        <button class="nav-toggle" aria-label="Toggle Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="grid-icon">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+        </button>
+      </div>
     </div>
-    <ul class="nav-links">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#connect">Let's Connect</a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Menu">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="grid-icon">
-        <rect x="3" y="3" width="7" height="7"></rect>
-        <rect x="14" y="3" width="7" height="7"></rect>
-        <rect x="14" y="14" width="7" height="7"></rect>
-        <rect x="3" y="14" width="7" height="7"></rect>
-      </svg>
-    </button>
   </nav>
 
-  <!-- SECTION: HOME -->
-  <section id="home" class="hero container section-padding">
+  <!-- SECTION: HERO -->
+  <section id="home" class="hero container section-padding fade-in-section">
     <div class="hero-image-wrapper">
-      <img id="hero-illustration" src="/src/assets/hero-illustration.png" alt="Business Growth Illustration"
-        class="hero-image" />
+      <img id="hero-illustration" src="/src/assets/hero-illustration.png" alt="Global India-Entry Financial Infrastructure Illustration" class="hero-image" />
     </div>
 
     <div class="hero-content">
       <div class="hero-text">
-        <h1>Your Startup's Financial Partner from Day One to Series A</h1>
-        <p class="hero-subtitle">We transform startup visions into investor-ready businesses through expert fundraising,
-          financial modeling, and compliance support.</p>
+        <h1>Start and Operate Your Business in India — Without the Complexity.</h1>
+        <p class="hero-subtitle">TAC helps global businesses establish, manage, and scale operations in India through compliance, taxation, accounting, and strategic finance support.</p>
       </div>
 
-      <div class="stats-row">
-        <div class="stat-item">
-          <h3>₹20 Cr+</h3>
-          <p>Funds Raised</p>
+      <div class="hero-actions">
+        <a href="mailto:info@theauditorsclub.com" class="btn-primary">Book Free Consultation</a>
+        <a href="mailto:info@theauditorsclub.com" class="btn-outline">Talk to India Experts</a>
+      </div>
+
+      <div class="trust-bar">
+        <div class="trust-item">
+          <span class="trust-icon">✦</span>
+          <span class="trust-text">8+ Years Experience</span>
         </div>
-        <div class="stat-item">
-          <h3>50+</h3>
-          <p>Startups</p>
+        <div class="trust-item">
+          <span class="trust-icon">✦</span>
+          <span class="trust-text">Startup & Global Business Experts</span>
         </div>
-        <div class="stat-item">
-          <h3>3 Months</h3>
-          <p>Avg time to Funding</p>
+        <div class="trust-item">
+          <span class="trust-icon">✦</span>
+          <span class="trust-text">End-to-End India Compliance Support</span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- SECTION: METRICS (TRUST ROW) -->
+  <section class="metrics-section bg-light fade-in-section">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number-wrapper">
+            <h3 class="metric-number" data-target="8">0</h3>
+            <span class="metric-plus">+</span>
+          </div>
+          <p class="metric-label">Years Experience</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number-wrapper">
+            <h3 class="metric-number" data-target="50">0</h3>
+            <span class="metric-plus">+</span>
+          </div>
+          <p class="metric-label">Startup Finance Specialists</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number-wrapper">
+            <h3 class="metric-number" data-target="100">0</h3>
+            <span class="metric-plus">%</span>
+          </div>
+          <p class="metric-label">India Compliance Experts</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number-wrapper">
+            <h3 class="metric-number" data-target="24">0</h3>
+            <span class="metric-plus">/7</span>
+          </div>
+          <p class="metric-label">End-to-End Business Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: WHY INDIA -->
+  <section id="why-india" class="why-india bg-offwhite section-padding fade-in-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Why India?</h2>
+        <p class="subtitle">Tap into the world's most dynamic growth story with a trusted partner</p>
+      </div>
+
+      <div class="why-india-grid">
+        <div class="why-india-card">
+          <div class="why-india-icon">📈</div>
+          <h3>Fast-Growing Economy</h3>
+          <p>Projected to become the world's 3rd largest economy by 2030, driven by structural reforms and demographic advantages.</p>
+        </div>
+        <div class="why-india-card">
+          <div class="why-india-icon">👥</div>
+          <h3>Massive Consumer Market</h3>
+          <p>Access a population of 1.4B+ with a rapidly rising middle class and high digital penetration.</p>
+        </div>
+        <div class="why-india-card">
+          <div class="why-india-icon">🚀</div>
+          <h3>Thriving Startup Ecosystem</h3>
+          <p>Now the 3rd largest startup ecosystem globally, attracting massive venture capital and global talent.</p>
+        </div>
+        <div class="why-india-card">
+          <div class="why-india-icon">🏭</div>
+          <h3>Expanding Manufacturing Sector</h3>
+          <p>Rapid industrialization supported by policy incentives and local supply chain maturity.</p>
+        </div>
+        <div class="why-india-card">
+          <div class="why-india-icon">💻</div>
+          <h3>Digital Economy</h3>
+          <p>Growing at 15%+ annually with world-leading digital public infrastructure (UPI, Aadhaar).</p>
+        </div>
+        <div class="why-india-card">
+          <div class="why-india-icon">🎓</div>
+          <h3>Skilled Workforce</h3>
+          <p>Deep pool of highly qualified, English-speaking technical and operational talent ready to scale your business.</p>
+        </div>
+      </div>
+
+      <div class="why-india-cta text-center mt-40">
+        <p class="why-india-cta-text">TAC helps global businesses navigate India confidently.</p>
+        <a href="mailto:info@theauditorsclub.com" class="btn-primary">Book a Free Consultation →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- SECTION: WHAT WE DO (Services) -->
-  <section id="services" class="what-we-do bg-light">
-    <div class="container section-padding">
+  <section id="services" class="what-we-do bg-light section-padding fade-in-section">
+    <div class="container">
       <div class="section-header text-center">
         <h2 class="section-title">What We Do</h2>
-        <p class="subtitle">We don't just deliver services—we deliver outcomes that get you funded</p>
+        <p class="subtitle">We deliver outcomes that enable your seamless entry and operations in India</p>
       </div>
 
       <div class="services-grid-new">
         <!-- Service 1 -->
         <div class="svc-card">
           <div class="svc-top">
-            <div class="svc-icon-box fill-blue">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="svc-icon">
-                <path d="M3 17L9 11L13 15L21 7" stroke="white" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M14 7H21V14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <div class="svc-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="svc-icon" stroke="white" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
             </div>
             <span class="pill-badge popular">Popular</span>
           </div>
-          <h3 class="svc-title">Fundraising & Pitch Decks</h3>
-          <p class="svc-blue-text">Turn your vision into investor-ready narratives</p>
-          <p class="svc-desc">Craft compelling pitch decks that tell your story and secure capital. From seed to Series
-            A, we position you for success.</p>
+          <h3 class="svc-title">Launch Your India Entity</h3>
+          <p class="svc-blue-text">Establish your corporate footprint seamlessly</p>
+          <p class="svc-desc">Complete incorporation setup for foreign subsidiaries, joint ventures, and branch offices in India, including bank account setup and statutory licenses.</p>
           <div class="outcome-box">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              class="outcome-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="outcome-icon">
               <circle cx="12" cy="12" r="10" />
               <circle cx="12" cy="12" r="6" />
               <circle cx="12" cy="12" r="2" />
             </svg>
             <div>
               <strong>Outcome:</strong>
-              <p>Average 3-month fundraising cycle. 85% success rate in securing target capital.</p>
+              <p>Fully active Indian entity with PAN, TAN, GST registrations, and corporate banking access in under 21 days.</p>
             </div>
           </div>
-          <a href="#" class="learn-more">Learn more &rarr;</a>
+          <a href="mailto:info@theauditorsclub.com" class="learn-more">Get Started &rarr;</a>
         </div>
 
         <!-- Service 2 -->
         <div class="svc-card">
           <div class="svc-top">
-            <div class="svc-icon-box fill-blue">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
-                class="svc-icon">
+            <div class="svc-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" class="svc-icon">
                 <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
                 <line x1="8" y1="6" x2="16" y2="6" />
                 <line x1="16" y1="14" x2="16" y2="14.01" />
@@ -130,103 +252,173 @@
             </div>
             <span class="pill-badge popular">Popular</span>
           </div>
-          <h3 class="svc-title">Financial Modelling</h3>
-          <p class="svc-blue-text">Build projections investors trust</p>
-          <p class="svc-desc">Create robust 3-5 year financial models that demonstrate your path to profitability and
-            scale.</p>
+          <h3 class="svc-title">Stay Fully Compliant in India</h3>
+          <p class="svc-blue-text">Zero compliance worries, guaranteed</p>
+          <p class="svc-desc">End-to-end GST filing, TDS deductions, MCA compliance, and corporate tax structuring designed for international entities.</p>
           <div class="outcome-box">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              class="outcome-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="outcome-icon">
               <circle cx="12" cy="12" r="10" />
               <circle cx="12" cy="12" r="6" />
               <circle cx="12" cy="12" r="2" />
             </svg>
             <div>
               <strong>Outcome:</strong>
-              <p>Models trusted by top-tier VCs. Clear path to unit economics and profitability.</p>
+              <p>100% compliance score. Shielded from regulatory penalties and local tax audits.</p>
             </div>
           </div>
-          <a href="#" class="learn-more">Learn more &rarr;</a>
+          <a href="mailto:info@theauditorsclub.com" class="learn-more">Get Started &rarr;</a>
         </div>
 
         <!-- Service 3 -->
         <div class="svc-card">
           <div class="svc-top">
-            <div class="svc-icon-box fill-blue">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
-                class="svc-icon">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                <polyline points="14 2 14 8 20 8" />
-                <path d="M9 15L11 17L15 13" />
+            <div class="svc-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" class="svc-icon">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 11l2 2 4-4" />
               </svg>
             </div>
             <span class="pill-badge popular">Popular</span>
           </div>
-          <h3 class="svc-title">Compliance & Incorporation</h3>
-          <p class="svc-blue-text">Stay compliant, stay focused</p>
-          <p class="svc-desc">Navigate regulatory requirements effortlessly. We handle the legal maze while you build
-            your product.</p>
+          <h3 class="svc-title">Financial Infrastructure for Growth</h3>
+          <p class="svc-blue-text">Scale with robust financial systems</p>
+          <p class="svc-desc">Automated bookkeeping, multi-currency reporting, vendor payouts, local payroll setup, and expert FP&A advisory.</p>
           <div class="outcome-box">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              class="outcome-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="outcome-icon">
               <circle cx="12" cy="12" r="10" />
               <circle cx="12" cy="12" r="6" />
               <circle cx="12" cy="12" r="2" />
             </svg>
             <div>
               <strong>Outcome:</strong>
-              <p>100% compliance track record. Zero missed deadlines or penalties.</p>
+              <p>Investor-ready financial reporting, real-time runway tracking, and seamless global-local accounting flow.</p>
             </div>
           </div>
-          <a href="#" class="learn-more">Learn more &rarr;</a>
+          <a href="mailto:info@theauditorsclub.com" class="learn-more">Get Started &rarr;</a>
         </div>
 
         <!-- Service 4 -->
         <div class="svc-card">
           <div class="svc-top">
-            <div class="svc-icon-box fill-blue">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
-                class="svc-icon">
+            <div class="svc-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" class="svc-icon">
                 <line x1="9" y1="18" x2="15" y2="18" />
                 <line x1="10" y1="22" x2="14" y2="22" />
                 <path d="M15 11.2V11a3 3 0 1 0-6 0v.2a4 4 0 0 1-1.6 3h9.2a4 4 0 0 1-1.6-3z" />
-                <line x1="12" y1="2" x2="12" y2="4" />
               </svg>
             </div>
             <span class="pill-badge popular">Popular</span>
           </div>
-          <h3 class="svc-title">Strategic Advisory</h3>
-          <p class="svc-blue-text">Expert guidance at every milestone</p>
-          <p class="svc-desc">Partner with seasoned advisors who've been through the startup journey. Get insights that
-            matter when they matter.</p>
+          <h3 class="svc-title">Operate Smoothly Without Regulatory Stress</h3>
+          <p class="svc-blue-text">Focus on your product and market</p>
+          <p class="svc-desc">Complete corporate governance, FEMA compliance, transfer pricing setups, and local CFO support for peace of mind.</p>
           <div class="outcome-box">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              class="outcome-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="outcome-icon">
               <circle cx="12" cy="12" r="10" />
               <circle cx="12" cy="12" r="6" />
               <circle cx="12" cy="12" r="2" />
             </svg>
             <div>
               <strong>Outcome:</strong>
-              <p>Strategic clarity on growth, funding, and scale decisions.</p>
+              <p>Full operational readiness for audits and cross-border transactions without compliance friction.</p>
             </div>
           </div>
-          <a href="#" class="learn-more">Learn more &rarr;</a>
+          <a href="mailto:info@theauditorsclub.com" class="learn-more">Get Started &rarr;</a>
         </div>
-
       </div>
+      
       <div class="text-center mt-40">
-        <button class="btn-outline">View All Services &rarr;</button>
+        <a href="mailto:info@theauditorsclub.com" class="btn-outline">Talk to India Experts &rarr;</a>
       </div>
     </div>
   </section>
 
-  <!-- SECTION: WHY FOUNDERS CHOOSE US -->
-  <section id="about" class="why-choose-us bg-offwhite">
-    <div class="container section-padding">
+  <!-- SECTION: WHO WE HELP -->
+  <section id="who-we-help" class="who-we-help bg-offwhite section-padding fade-in-section">
+    <div class="container">
       <div class="section-header text-center">
-        <h2 class="section-title">Why Founders Choose Us</h2>
-        <p class="subtitle">We're not just another consulting firm. We're your unfair advantage.</p>
+        <h2 class="section-title">Who We Help</h2>
+        <p class="subtitle">Comprehensive business infrastructure built for global builders</p>
+      </div>
+
+      <div class="who-we-help-grid">
+        <div class="wwh-card">
+          <div class="wwh-icon">🌐</div>
+          <h3 class="wwh-label">Global Startups</h3>
+          <p class="wwh-desc">Establish and operate local offices or engineering hubs in India with zero legal friction.</p>
+        </div>
+        <div class="wwh-card">
+          <div class="wwh-icon">👤</div>
+          <h3 class="wwh-label">Overseas Founders</h3>
+          <p class="wwh-desc">Set up your business structure in India remotely, guided by seasoned compliance and legal experts.</p>
+        </div>
+        <div class="wwh-card">
+          <div class="wwh-icon">💻</div>
+          <h3 class="wwh-label">SaaS Companies</h3>
+          <p class="wwh-desc">Manage local payments, invoicing, and tax filings for your SaaS sales in India seamlessly.</p>
+        </div>
+        <div class="wwh-card">
+          <div class="wwh-icon">🛒</div>
+          <h3 class="wwh-label">E-commerce Brands</h3>
+          <p class="wwh-desc">Navigate local supply chains, customs regulations, warehousing operations, and local tax compliance.</p>
+        </div>
+        <div class="wwh-card font-large-span">
+          <div class="wwh-icon">🏢</div>
+          <h3 class="wwh-label">International Businesses Entering India</h3>
+          <p class="wwh-desc">Leverage end-to-end entity setup, local banking, payroll setup, and strategic tax advice for entering the Indian market.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: HOW TAC WORKS -->
+  <section id="how-it-works" class="how-tac-works bg-light section-padding fade-in-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">How TAC Works</h2>
+        <p class="subtitle">A streamlined, end-to-end roadmap for launching and operating in India</p>
+      </div>
+
+      <div class="process-stepper-new">
+        <div class="step-card-new">
+          <div class="step-badge-new">01</div>
+          <h3 class="st-title">Book Discovery Call</h3>
+          <p class="st-desc">Connect with our team to align on your business model, entity requirements, and expansion timelines.</p>
+        </div>
+
+        <div class="step-card-new">
+          <div class="step-badge-new">02</div>
+          <h3 class="st-title">Structure Business Setup</h3>
+          <p class="st-desc">Get a customized regulatory and tax blueprint mapped to your international corporate structure.</p>
+        </div>
+
+        <div class="step-card-new">
+          <div class="step-badge-new">03</div>
+          <h3 class="st-title">India Incorporation & Registration</h3>
+          <p class="st-desc">We handle incorporation filing, government registrations, PAN/TAN, and local banking setup.</p>
+        </div>
+
+        <div class="step-card-new">
+          <div class="step-badge-new">04</div>
+          <h3 class="st-title">Compliance & Financial Operations</h3>
+          <p class="st-desc">Transition to digital bookkeeping, local payroll, monthly tax filings, and FEMA compliance.</p>
+        </div>
+
+        <div class="step-card-new">
+          <div class="step-badge-new">05</div>
+          <h3 class="st-title">Scale with TAC Support</h3>
+          <p class="st-desc">Optimize your corporate tax strategy, access strategic CFO advisory, and expand your operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: WHY BUSINESSES CHOOSE TAC -->
+  <section id="why-choose-us" class="why-choose-us bg-offwhite section-padding fade-in-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Why Global Companies Choose TAC</h2>
+        <p class="subtitle">We're not just another consulting firm. We're your unfair expansion advantage.</p>
       </div>
       <div class="why-grid">
 
@@ -235,12 +427,11 @@
             <span class="why-num-badge">1</span>
             <div class="why-stat text-right">
               <span class="stat-big">100%</span><br>
-              <span class="stat-small">Startup Focus</span>
+              <span class="stat-small">India Entry Focus</span>
             </div>
           </div>
-          <h3 class="why-title">Startup-Specialized Expertise</h3>
-          <p class="why-desc">We don't do corporate. We don't do established businesses. We only work with startups—it's
-            all we do, and we're exceptional at it.</p>
+          <h3 class="why-title">Global-to-India Expertise</h3>
+          <p class="why-desc">We specialize in guiding international companies, SaaS brands, and overseas founders through the Indian regulatory and financial landscape.</p>
         </div>
 
         <div class="why-card">
@@ -251,35 +442,32 @@
               <span class="stat-small">of Big 4 Cost</span>
             </div>
           </div>
-          <h3 class="why-title">Institutional-Grade, Startup-Priced</h3>
-          <p class="why-desc">Big 4 expertise without the Big 4 price tag. World-class financial advisory that
-            early-stage founders can actually afford.</p>
+          <h3 class="why-title">Institutional-Grade, Cost-Effective</h3>
+          <p class="why-desc">Get Big 4 caliber advisory and infrastructure at a fraction of the cost, optimized for fast-growing global businesses.</p>
         </div>
 
         <div class="why-card">
           <div class="why-top">
             <span class="why-num-badge">3</span>
             <div class="why-stat text-right">
-              <span class="stat-big">₹20Cr+</span><br>
-              <span class="stat-small">Funds Raised</span>
+              <span class="stat-big">100%</span><br>
+              <span class="stat-small">Compliance Success</span>
             </div>
           </div>
-          <h3 class="why-title">Proven Fundraising Success</h3>
-          <p class="why-desc">Our founders have raised ₹20 Cr+ from top VCs. We know what investors want because we've
-            successfully delivered it 50+ times.</p>
+          <h3 class="why-title">Seamless Compliance Infrastructure</h3>
+          <p class="why-desc">Ensure 100% compliant entity setup and flawless ongoing financial operations. Zero local regulatory stress.</p>
         </div>
 
         <div class="why-card">
           <div class="why-top">
             <span class="why-num-badge">4</span>
             <div class="why-stat text-right">
-              <span class="stat-big">2.5 years</span><br>
-              <span class="stat-small">Avg. Partnership</span>
+              <span class="stat-big">8+ Yrs</span><br>
+              <span class="stat-small">Average Experience</span>
             </div>
           </div>
-          <h3 class="why-title">True Partnership Approach</h3>
-          <p class="why-desc">We're not transactional. We're invested in your success. Many of our clients have been
-            with us from incorporation to Series A and beyond.</p>
+          <h3 class="why-title">Dedicated Expansion Partner</h3>
+          <p class="why-desc">We act as your local finance team and strategic growth partner in India. We are deeply invested in your long-term success.</p>
         </div>
 
       </div>
@@ -287,56 +475,50 @@
   </section>
 
   <!-- SECTION: ABOUT US & FOUNDERS -->
-  <section id="about" class="team-section bg-light">
-    <div class="container section-padding">
+  <section id="about" class="team-section bg-light section-padding fade-in-section">
+    <div class="container">
       <div class="section-header text-center" style="margin-bottom: 60px;">
         <h2 class="section-title">About Us</h2>
-        <p class="subtitle" style="font-size: 1.25rem; color: var(--dark-purple); font-weight: 600;">We bridge the gap
-          between startup potential and investor capital.</p>
-        <p style="max-width: 800px; margin: 16px auto 0; color: #555; line-height: 1.6; font-size: 1.05rem;">Founded by
-          financial experts who saw founders struggling with the complexities of fundraising and compliance. We provide
-          "institutional-grade" advisory at startup-friendly pricing.</p>
+        <p class="subtitle" style="font-size: 1.25rem; color: var(--dark-purple); font-weight: 600;">Bridging the gap between global business infrastructure and local operational excellence.</p>
+        <p style="max-width: 800px; margin: 16px auto 0; color: #555; line-height: 1.6; font-size: 1.05rem;">We help global startups, overseas founders, and international brands navigate the regulatory, financial, and tax complexities of doing business in India. Our institutional-grade advisory makes India expansion simple, transparent, and scalable.</p>
       </div>
 
       <div class="team-grid">
         <!-- Founder 1 -->
         <div class="team-card">
           <div class="team-img-wrapper">
-            <!-- Placeholder image, user will provide real src -->
-            <img src="https://via.placeholder.com/600x400/2f2e41/ffffff?text=Arjun+Singh" alt="Arjun Singh"
-              class="team-img"
-              onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/2f2e41/ffffff?text=Arjun+Singh'">
-            <div class="team-info-overlay">
-              <h3>Arjun Singh</h3>
-              <p>FOUNDER & CEO</p>
-            </div>
+            <img src="/src/assets/arjun_singh.png" alt="Arjun Singh" class="team-img" />
           </div>
           <div class="team-content">
-            <p class="team-highlight">Transforms startup finances into investor-ready stories that secure capital.</p>
+            <h3 class="founder-name">Arjun Singh</h3>
+            <p class="founder-role">FOUNDER & CEO</p>
+            <p class="team-highlight">Arjun brings deep expertise in FP&A, startup fundraising, and strategic finance. He has guided early-stage companies through their most critical financial milestones — from structuring investor-ready models to closing funding rounds. His work sits at the intersection of numbers and narrative.</p>
 
             <div class="expertise-area">
               <strong>Core Expertise:</strong>
               <div class="expertise-pills">
                 <span>FP&A</span>
-                <span>Fundraising Strategy</span>
-                <span>Growth Advisory</span>
+                <span>Startup Fundraising</span>
+                <span>Strategic Finance</span>
+                <span>Growth Consulting</span>
               </div>
             </div>
 
             <div class="track-record-box">
-              <svg width="18" height="18" fill="var(--dark-purple)" viewBox="0 0 16 16" style="flex-shrink: 0;">
+              <svg width="18" height="18" fill="var(--dark-purple)" viewBox="0 0 16 16" style="flex-shrink: 0; margin-top: 2px;">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                <line x1="11" y1="5" x2="6" y2="10" stroke="var(--dark-purple)" stroke-width="1.5" />
-                <line x1="11" y1="5" x2="8" y2="5" stroke="var(--dark-purple)" stroke-width="1.5" />
-                <line x1="11" y1="5" x2="11" y2="8" stroke="var(--dark-purple)" stroke-width="1.5" />
+                <polyline points="11 5 6 10 8 5" stroke="var(--dark-purple)" stroke-width="1.5" fill="none" />
               </svg>
-              <span><strong>Track Record:</strong> Guided 30+ startups from idea to funded, with ₹15 Cr+ capital
-                raised</span>
+              <span><strong>Track Record:</strong> Guided 30+ international entities from idea to funded, with ₹15 Cr+ capital raised.</span>
             </div>
 
             <div class="team-socials">
-              <a href="https://www.linkedin.com/in/arjunvssingh/" aria-label="LinkedIn" target="_blank">In</a>
-              <a href="https://x.com/arjunvssingh" aria-label="X" target="_blank">X</a>
+              <a href="https://www.linkedin.com/in/arjunvssingh/" aria-label="LinkedIn" target="_blank">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="https://x.com/arjunvssingh" aria-label="X" target="_blank">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
               <a href="mailto:arjun@theauditorsclub.com" aria-label="Mail" target="_blank">✉</a>
             </div>
           </div>
@@ -345,41 +527,38 @@
         <!-- Founder 2 -->
         <div class="team-card">
           <div class="team-img-wrapper">
-            <img src="https://via.placeholder.com/600x400/2f2e41/ffffff?text=Kaushal+Singh" alt="Kaushal Singh"
-              class="team-img"
-              onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/2f2e41/ffffff?text=Kaushal+Singh'">
-            <div class="team-info-overlay">
-              <h3>Kaushal Singh</h3>
-              <p>CO-FOUNDER & LEGAL HEAD</p>
-            </div>
+            <img src="/src/assets/kaushal_singh.png" alt="Kaushal Singh" class="team-img" />
           </div>
           <div class="team-content">
-            <p class="team-highlight">Ensures your startup stays compliant, investor-ready, and legally bulletproof.</p>
+            <h3 class="founder-name">Kaushal Singh</h3>
+            <p class="founder-role">CO-FOUNDER & LEGAL HEAD</p>
+            <p class="team-highlight">Kaushal specializes in the legal and financial infrastructure that protects and scales businesses in India. From investor due diligence to taxation strategy and pitch deck structuring, he ensures every company he partners with is compliant, defensible, and investor-ready.</p>
 
             <div class="expertise-area">
               <strong>Core Expertise:</strong>
               <div class="expertise-pills">
-                <span>Due Diligence</span>
-                <span>Compliance</span>
                 <span>Taxation</span>
-                <span>Pitch Decks</span>
+                <span>Investor Due Diligence</span>
+                <span>Compliance</span>
+                <span>Pitch Deck Structuring</span>
               </div>
             </div>
 
             <div class="track-record-box">
-              <svg width="18" height="18" fill="var(--dark-purple)" viewBox="0 0 16 16" style="flex-shrink: 0;">
+              <svg width="18" height="18" fill="var(--dark-purple)" viewBox="0 0 16 16" style="flex-shrink: 0; margin-top: 2px;">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                <line x1="11" y1="5" x2="6" y2="10" stroke="var(--dark-purple)" stroke-width="1.5" />
-                <line x1="11" y1="5" x2="8" y2="5" stroke="var(--dark-purple)" stroke-width="1.5" />
-                <line x1="11" y1="5" x2="11" y2="8" stroke="var(--dark-purple)" stroke-width="1.5" />
+                <polyline points="11 5 6 10 8 5" stroke="var(--dark-purple)" stroke-width="1.5" fill="none" />
               </svg>
-              <span><strong>Track Record:</strong> Zero compliance penalties across 50+ startups, 100% due diligence
-                success rate</span>
+              <span><strong>Track Record:</strong> Zero compliance penalties across 50+ clients, 100% due diligence success rate.</span>
             </div>
 
             <div class="team-socials">
-              <a href="https://www.linkedin.com/in/cakaushalsingh/" aria-label="LinkedIn" target="_blank">In</a>
-              <a href="https://x.com/KaushalSingh304" aria-label="X" target="_blank">X</a>
+              <a href="https://www.linkedin.com/in/cakaushalsingh/" aria-label="LinkedIn" target="_blank">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="https://x.com/KaushalSingh304" aria-label="X" target="_blank">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
               <a href="mailto:kaushal@theauditorsclub.com" aria-label="Mail" target="_blank">✉</a>
             </div>
           </div>
@@ -388,64 +567,12 @@
     </div>
   </section>
 
-  <!-- SECTION: HOW WE WORK -->
-  <section class="how-we-work bg-light">
-    <div class="container section-padding">
-      <div class="section-header text-center">
-        <h2 class="section-title">How We Work</h2>
-        <p class="subtitle">A proven process refined with 50+ startups</p>
-      </div>
-
-      <div class="process-stepper">
-        <div class="step-card">
-          <div class="step-badges">
-            <span class="st-num">01</span>
-            <span class="st-week">Week 1</span>
-          </div>
-          <h3 class="st-title">Discovery & Alignment</h3>
-          <p class="st-desc">We start with a deep-dive session to understand your vision, challenges, current stage, and
-            fundraising goals.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-badges">
-            <span class="st-num">02</span>
-            <span class="st-week">Week 1-2</span>
-          </div>
-          <h3 class="st-title">Strategy & Roadmap</h3>
-          <p class="st-desc">We create a customized action plan—whether it's fundraising strategy, financial modeling,
-            or compliance setup.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-badges">
-            <span class="st-num">03</span>
-            <span class="st-week">Week 2-8</span>
-          </div>
-          <h3 class="st-title">Execution & Delivery</h3>
-          <p class="st-desc">Our team gets to work—crafting your pitch deck, building financial models, or setting up
-            compliance frameworks.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-badges">
-            <span class="st-num">04</span>
-            <span class="st-week">Ongoing</span>
-          </div>
-          <h3 class="st-title">Ongoing Partnership</h3>
-          <p class="st-desc">We don't disappear after delivery. We're your ongoing partner—refining strategy, preparing
-            for next rounds, staying compliant.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- SECTION: TESTIMONIALS (WALL OF LOVE) -->
-  <section class="testimonials bg-offwhite">
-    <div class="container section-padding">
+  <section class="testimonials bg-offwhite section-padding fade-in-section">
+    <div class="container">
       <div class="section-header text-center">
-        <h2 class="section-title">What Founders Say</h2>
-        <p class="subtitle">Join the founders who trust us to secure their capital.</p>
+        <h2 class="section-title">What Global Founders Say</h2>
+        <p class="subtitle">Join the international builders who trust TAC for their Indian expansion</p>
       </div>
 
       <div class="tweet-grid">
@@ -459,13 +586,11 @@
             </div>
             <div class="tw-icon">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" color="#1DA1F2">
-                <path
-                  d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+                <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
               </svg>
             </div>
           </div>
-          <p class="tw-content">The Auditors Club transformed our pitch deck. We went from struggling to secure meetings
-            to raising our Seed round in just 3 months. Absolute game changers for our startup! 🚀</p>
+          <p class="tw-content">The Auditors Club transformed our Indian entity setup. We went from being overwhelmed by MCA regulations to being fully incorporated and operational in under 3 weeks. Absolutely seamless execution! 🚀</p>
         </div>
 
         <!-- Tweet 2 -->
@@ -478,13 +603,11 @@
             </div>
             <div class="tw-icon">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" color="#1DA1F2">
-                <path
-                  d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+                <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
               </svg>
             </div>
           </div>
-          <p class="tw-content">Their financial models are so robust that our lead VC completely bypassed their standard
-            due diligence on our projections. Worth every penny and effectively 1/10th the cost of tier-1 firms.</p>
+          <p class="tw-content">Their financial reporting framework is world-class. Having automated multi-currency reporting and instant compliance status reports gives us complete peace of mind to focus on scaling operations.</p>
         </div>
 
         <!-- Tweet 3 -->
@@ -497,120 +620,90 @@
             </div>
             <div class="tw-icon">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" color="#1DA1F2">
-                <path
-                  d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+                <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
               </svg>
             </div>
           </div>
-          <p class="tw-content">Focusing on product is easy when TAC handles all our MCA compliance and paperwork. They
-            are truly an execution-oriented team. Can't recommend them enough! #startup #compliance</p>
+          <p class="tw-content">Setting up an engineering hub in Gurgaon was incredibly straightforward with TAC. They handled payroll setup, bank registrations, and ongoing compliance with zero overhead for our headquarters.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION: LET'S CONNECT & FOOTER -->
-  <section id="connect" class="connect-footer-section">
-    <!-- Connect Banner -->
-    <div class="connect-banner">
-      <div class="container section-padding text-center">
-        <h2 class="section-title text-white">Ready to Make Your Startup Investor-Ready?</h2>
-        <p class="text-white lead" style="margin-bottom: 40px; opacity: 0.9;">Book a free 30-minute consultation. No
-          pitch. No pressure. Just honest advice on your fundraising journey.</p>
+  <!-- Dark 4-Col Footer -->
+  <footer class="dark-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1 -->
+        <div class="footer-col">
+          <h3 class="footer-logo">
+            <strong>TAC</strong>
+          </h3>
+          <p class="text-gray mb-16">Your India-Entry & Financial Operations Partner</p>
+          <p class="text-gray">Empowering global companies, SaaS brands, and overseas founders to build and scale seamlessly in India.</p>
+        </div>
 
-        <div class="connect-actions">
-          <!-- Email Form replacing original simple button -->
-          <form id="subscribe-form" class="subscribe-form dark-form" action="#" method="POST">
-            <input type="email" name="email" id="email" placeholder="Your email address" required />
-            <button type="submit" class="btn-primary">Let's Connect &rarr;</button>
-          </form>
-          <div id="form-message" class="hidden text-white" style="margin-top: 10px;"></div>
+        <!-- Col 2 -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#why-india">Why India</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#who-we-help">Who We Help</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
 
-          <p class="response-guarantee mt-20 text-white">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              style="vertical-align: middle; margin-right: 4px;">
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
-            </svg> Response within 24 hours guaranteed
-          </p>
+        <!-- Col 3 -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Launch Your India Entity</a></li>
+            <li><a href="#services">Stay Fully Compliant</a></li>
+            <li><a href="#services">Financial Infrastructure</a></li>
+            <li><a href="#services">Operational CFO Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Us</h4>
+          <ul class="footer-contact">
+            <li style="display: flex; align-items: flex-start; gap: 8px;">
+              <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg></span>
+              <span><a href="mailto:info@theauditorsclub.com" target="_blank">info@theauditorsclub.com</a></span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 8px;">
+              <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg></span>
+              <span>
+                <a href="tel:+919990188784">+919990188784</a><br>
+                <a href="tel:+917042525568">+917042525568</a>
+              </span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 8px;">
+              <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg></span>
+              <span>Gurgaon, India</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-
-    <!-- Dark 4-Col Footer -->
-    <footer class="dark-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <!-- Col 1 -->
-          <div class="footer-col">
-            <h3 class="footer-logo">
-              <strong style="font-family: cursive; font-size: 2rem;">TAC</strong>
-            </h3>
-            <p class="text-gray mb-16">Your Startup's Financial Partner from Day One to Series A</p>
-            <p class="text-gray">Empowering startups from idea to investment.</p>
-          </div>
-
-          <!-- Col 2 -->
-          <div class="footer-col">
-            <h4 class="footer-heading">Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#home">Insights</a></li>
-              <li><a href="#connect">Contact</a></li>
-            </ul>
-          </div>
-
-          <!-- Col 3 -->
-          <div class="footer-col">
-            <h4 class="footer-heading">Our Services</h4>
-            <ul class="footer-links">
-              <li><a href="#services">Fundraising & Pitch Decks</a></li>
-              <li><a href="#services">Financial Modelling</a></li>
-              <li><a href="#services">Compliance & Incorporation</a></li>
-              <li><a href="#services">Strategic Advisory</a></li>
-            </ul>
-          </div>
-
-          <!-- Col 4 -->
-          <div class="footer-col">
-            <h4 class="footer-heading">Contact Us</h4>
-            <ul class="footer-contact">
-              <li style="display: flex; align-items: flex-start; gap: 8px;">
-                <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg></span>
-                <span><a href="mailto:info@theauditorsclub.com" target="_blank">info@theauditorsclub.com</a></span>
-              </li>
-              <li style="display: flex; align-items: flex-start; gap: 8px;">
-                <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                    </path>
-                  </svg></span>
-                <span>
-                  <a href="tel:+919990188784">+919990188784</a><br>
-                  <a href="tel:+917042525568">+917042525568</a>
-                </span>
-              </li>
-              <li style="display: flex; align-items: flex-start; gap: 8px;">
-                <span class="f-icon" style="flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg></span>
-                <span>Gurgaon, India</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </section>
+  </footer>
 
   <script type="module" src="/src/main.js"></script>
 </body>
