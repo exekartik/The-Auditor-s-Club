@@ -9,8 +9,6 @@ export default defineConfig({
         terms: resolve(__dirname, 'terms-and-conditions.html'),
         privacy: resolve(__dirname, 'privacy-policy.html'),
         refund: resolve(__dirname, 'refund-policy.html'),
-        return: resolve(__dirname, 'return-policy.html'),
-        shipping: resolve(__dirname, 'shipping-policy.html'),
       },
     },
   },
